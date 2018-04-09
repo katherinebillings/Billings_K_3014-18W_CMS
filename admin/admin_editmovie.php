@@ -3,6 +3,7 @@
 	//error_reporting(E_ALL);
 
 	require_once('phpscripts/config.php');
+	confirm_logged_in();
 ?>
 <!doctype html>
 <html>

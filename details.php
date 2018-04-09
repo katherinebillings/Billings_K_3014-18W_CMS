@@ -14,6 +14,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Details</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php
@@ -22,7 +23,7 @@
 			echo "<img src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
 				<h2>{$row['movies_title']}</h2>
 				<p>{$row['movies_year']}</p>
-				<p>{$row['movies_storyline']}</p>
+				<p>{$row['movies_desc']}</p>
 				<a href=\"index.php\">Back...</a>";
 		}else{
 			echo "<p class=\"error\">{$getSingle}</p>";

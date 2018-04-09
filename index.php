@@ -21,14 +21,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<a id="login" href="admin/admin_login.php">Login</a>
 <?php
 	include('includes/nav.html');
 
 	if(!is_string($getMovies)){
 			while($row = mysqli_fetch_array($getMovies)){
-				echo "<img src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
+				echo "<img class=\"mainImg\" src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
 					<h2>{$row['movies_title']}</h2>
 					<p>{$row['movies_year']}</p>
 					<a href=\"details.php?id={$row['movies_id']}\">More Details...</a>
