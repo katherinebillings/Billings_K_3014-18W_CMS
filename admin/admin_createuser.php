@@ -29,6 +29,7 @@
 </head>
 <body>
 	<h1>Welcome Company Name to your create user page</h1>
+	<a href="admin_index.php">Back</a>
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_createuser.php" method="post">
 		<label>First Name:</label>

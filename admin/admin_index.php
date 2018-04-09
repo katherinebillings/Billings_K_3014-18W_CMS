@@ -30,11 +30,16 @@
 	//$date = date('l, F jS, Y \a\t g:i:s a');
 	echo "<h3>You last logged in on {$_SESSION['user_date']}</h3>";
 	?>
-	<div id="anchors">
+	<div class="anchors">
 		<a href="admin_createuser.php">Create User</a>
 		<a href="admin_edituser.php">Edit User</a>
 		<a href="admin_deleteuser.php">Fired</a>
 		<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
+	</div>
+	<div class="anchors movies">
+		<a href="admin_addmovie.php">Submit Movie</a>
+		<a href="admin_editmovie.php">Edit Movie</a>
+		<a href="admin_deletemovie.php">Remove Movie</a>
 	</div>
 </body>
 </html>

@@ -15,6 +15,7 @@
 </head>
 <body>
 	<h1>Welcome Company Name to your admin page</h1>
+	<a href="admin_index.php">Back</a>
 	<div id="fBox">
 		<?php
 			while($row = mysqli_fetch_array($users)) {

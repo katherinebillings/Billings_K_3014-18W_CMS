@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<a href="admin_index.php">Back</a>
 	<h1>Welcome Company Name to your edit account page</h1>
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_edituser.php" method="post">

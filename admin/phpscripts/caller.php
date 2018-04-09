@@ -14,6 +14,16 @@
 		}
 	}
 
+	if(isset($_GET['movie_id'])){
+		$dir = $_GET['movie_id'];
+		if($dir == 'delete'){
+			$id = $_GET['id'];
+			deleteMovie($id);
+		}else{
+			echo "Caller id was passed incorrectly";
+		}
+	}
+
 
 
 ?>
